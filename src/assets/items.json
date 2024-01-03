@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "Faucet Handle",
+    "description": "Faucet Handle",
+    "price": 28,
+    "imageUrl": "00014-3080320840.png"
+  },
+  {
+    "id": 2,
+    "name": "Galvanized Steel Pipe (Large)",
+    "description": "Galvanized Steel Pipe (Large)",
+    "price": 55,
+    "imageUrl": "00001-3080320827.png"
+  },
+  {
+    "id": 3,
+    "name": "Shower Head",
+    "description": "Shower Head",
+    "price": 42,
+    "imageUrl": "00022-3080320848.png"
+  },
+  {
+    "id": 4,
+    "name": "Check Valve",
+    "description": "Check Valve",
+    "price": 39,
+    "imageUrl": "00010-3080320836.png"
+  },
+  {
+    "id": 5,
+    "name": "Cast Iron Pipe (Large)",
+    "description": "Cast Iron Pipe (Large)",
+    "price": 25,
+    "imageUrl": "00002-3080320828.png"
+  },
+  {
+    "id": 6,
+    "name": "Plumber's Snake (Medium)",
+    "description": "Plumber's Snake (Medium)",
+    "price": 10,
+    "imageUrl": "00015-3080320841.png"
+  },
+  {
+    "id": 7,
+    "name": "Pipe Cutter (Large)",
+    "description": "Pipe Cutter (Large)",
+    "price": 46,
+    "imageUrl": "00003-3080320829.png"
+  },
+  {
+    "id": 8,
+    "name": "Pressure Regulator",
+    "description": "Pressure Regulator",
+    "price": 53,
+    "imageUrl": "00009-3080320835.png"
+  },
+  {
+    "id": 9,
+    "name": "Sump Pump (Small)",
+    "description": "Sump Pump (Small)",
+    "price": 4,
+    "imageUrl": "00019-3080320845.png"
+  },
+  {
+    "id": 10,
+    "name": "Sewage Ejector Pump (Medium)",
+    "description": "Sewage Ejector Pump (Medium)",
+    "price": 30,
+    "imageUrl": "00017-3080320843.png"
+  },
+  {
+    "id": 11,
+    "name": "Utility Pump (Large)",
+    "description": "Utility Pump (Large)",
+    "price": 57,
+    "imageUrl": "00006-3080320832.png"
+  },
+  {
+    "id": 12,
+    "name": "Shower Drain",
+    "description": "Shower Drain",
+    "price": 9,
+    "imageUrl": "00024-3080320850.png"
+  },
+  {
+    "id": 13,
+    "name": "Hose Nozzle",
+    "description": "Hose Nozzle",
+    "price": 49,
+    "imageUrl": "00016-3080320842.png"
+  },
+  {
+    "id": 14,
+    "name": "Backflow Preventer",
+    "description": "Backflow Preventer",
+    "price": 16,
+    "imageUrl": "00021-3080320847.png"
+  },
+  {
+    "id": 15,
+    "name": "Gas Shutoff Valve (Medium)",
+    "description": "Gas Shutoff Valve (Medium)",
+    "price": 50,
+    "imageUrl": "00028-3080320854.png"
+  },
+  {
+    "id": 16,
+    "name": "Expansion Tank (Large)",
+    "description": "Expansion Tank (Large)",
+    "price": 7,
+    "imageUrl": "00000-3080320826.png"
+  }
+]
