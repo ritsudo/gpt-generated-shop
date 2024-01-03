@@ -1,101 +1,10 @@
 <div class="container">
-    <div class="items-grid">
-      <div class="item">
-        <img src="item1.jpg" alt="Item 1">
-        <h3>Product Name 1</h3>
-        <p>Description of the product.</p>
-        <p class="price">$19.99</p>
+    <div class="items-grid" >
+      <div class="item"  *ngFor="let item of items | async">
+        <img src="/assets/images_local/{{item.imageUrl}}" alt="Item 1">
+        <h3>{{item.name}}</h3>
+        <p class="price">${{item.price}}.00</p>
         <button>Add to Cart</button>
       </div>
-      <div class="item">
-        <img src="item2.jpg" alt="Item 2">
-        <h3>Product Name 2</h3>
-        <p>Description of the product.</p>
-        <p class="price">$24.99</p>
-        <button>Add to Cart</button>
-      </div>
-	  
-      <div class="item">
-        <img src="item2.jpg" alt="Item 2">
-        <h3>Product Name 2</h3>
-        <p>Description of the product.</p>
-        <p class="price">$24.99</p>
-        <button>Add to Cart</button>
-      </div>
-	  
-      <div class="item">
-        <img src="item2.jpg" alt="Item 2">
-        <h3>Product Name 2</h3>
-        <p>Description of the product.</p>
-        <p class="price">$24.99</p>
-        <button>Add to Cart</button>
-      </div>
-	  
-      <div class="item">
-        <img src="item2.jpg" alt="Item 2">
-        <h3>Product Name 2</h3>
-        <p>Description of the product.</p>
-        <p class="price">$24.99</p>
-        <button>Add to Cart</button>
-      </div>
-	  
-      <div class="item">
-        <img src="item2.jpg" alt="Item 2">
-        <h3>Product Name 2</h3>
-        <p>Description of the product.</p>
-        <p class="price">$24.99</p>
-        <button>Add to Cart</button>
-      </div>
-	  
-      <div class="item">
-        <img src="item2.jpg" alt="Item 2">
-        <h3>Product Name 2</h3>
-        <p>Description of the product.</p>
-        <p class="price">$24.99</p>
-        <button>Add to Cart</button>
-      </div>
-	  
-	  
-      <div class="item">
-        <img src="item1.jpg" alt="Item 1">
-        <h3>Product Name 1</h3>
-        <p>Description of the product.</p>
-        <p class="price">$19.99</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="item">
-        <img src="item2.jpg" alt="Item 2">
-        <h3>Product Name 2</h3>
-        <p>Description of the product.</p>
-        <p class="price">$24.99</p>
-        <button>Add to Cart</button>
-      </div>
-	  
-	  
-      <div class="item">
-        <img src="item1.jpg" alt="Item 1">
-        <h3>Product Name 1</h3>
-        <p>Description of the product.</p>
-        <p class="price">$19.99</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="item">
-        <img src="item2.jpg" alt="Item 2">
-        <h3>Product Name 2</h3>
-        <p>Description of the product.</p>
-        <p class="price">$24.99</p>
-        <button>Add to Cart</button>
-      </div>
-	  
-	  
-      <div class="item">
-        <img src="item1.jpg" alt="Item 1">
-        <h3>Product Name 1</h3>
-        <p>Description of the product.</p>
-        <p class="price">$19.99</p>
-        <button>Add to Cart</button>
-      </div>
-	  
-      <!-- Add more items as needed -->
     </div>
   </div>
