@@ -62,12 +62,12 @@ export class OrderComponent implements AfterContentInit {
       .subscribe(result => {
         this.cartService.clearCart();
         this.totalBill = 0;
-        window.alert('Your order has been submitted');
+        window.alert('Ваш заказ был успешно отправлен');
         this.checkoutForm.reset();
         this.router.navigate(['/']);
       },
       error => {
-        window.alert('Error happened when submitting an order. Try again later.');
+        window.alert('Ошибка при отправке заказа. Возможно, сервер недоступен.');
       });
 
     

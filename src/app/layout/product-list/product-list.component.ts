@@ -26,7 +26,7 @@ export class ProductListComponent implements OnInit {
     if (result == 1) {
 //      window.alert('Your item ' + item.name + ' has been added to cart! Open the cart to change item count');
     } else if (result == -1) {
-      window.alert('Error: item' + item.name + ' is already exists in your cart. Open the cart to change item count and make order');
+      window.alert('Ошибка: предмет ' + item.name + ' уже есть в вашей корзине. Чтобы изменить количество, перейдите на вкладку корзины, там же можно сделать заказ.');
     } else {
       window.alert('Error adding item');
     }

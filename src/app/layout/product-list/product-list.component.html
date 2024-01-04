@@ -3,8 +3,8 @@
       <div class="item"  *ngFor="let item of items | async">
         <img src="/assets/images_local/{{item.imageUrl}}" alt="Item 1">
         <h3>{{item.name}}</h3>
-        <p class="price">${{item.price}}.00</p>
-        <button (click)="addToCart(item)">Add to Cart</button>
+        <p class="price">{{item.price}}.00₽</p>
+        <button (click)="addToCart(item)">Добавить в корзину</button>
       </div>
     </div>
   </div>

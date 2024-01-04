@@ -1,13 +1,13 @@
 
-<h2>Review your order:</h2>
+<h2>Проверьте ваш заказ:</h2>
 <table>
   <thead>
       <tr>
-          <th>#</th>
-          <th>Name</th>
-          <th>1 pcs price</th>
-          <th>Count</th>
-          <th>Total Price</th>
+          <th>№</th>
+          <th>Наименование</th>
+          <th>Цена за 1 шт.</th>
+          <th>Количество</th>
+          <th>Общая цена</th>
       </tr>
   </thead>
   <tbody>
@@ -23,30 +23,30 @@
   </tbody>
 </table>
   <!-- order table -->
-<p *ngIf="totalBill>0" #totalPriceElement>Total items: {{items.length}}. <b>Total bill: {{totalBill}}$</b></p>
-<p *ngIf="totalBill==0">Your shopping cart is empty. Add something from items section.</p>
+<p *ngIf="totalBill>0" #totalPriceElement>Всего позиций: {{items.length}}. <b>Общая сумма: {{totalBill}}.00₽</b></p>
+<p *ngIf="totalBill==0">В корзине ничего нет. Добавьте предметы из меню с товарами.</p>
 
 <div class="container">
-    <h2>Customer Information</h2>
+    <h2>Информация о покупателе</h2>
     <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" id="customerForm">
       <div class="form-group">
-        <label for="fullName">Full Name:</label>
+        <label for="fullName">Ваше ФИО:</label>
         <input type="text" id="fullName" name="fullName" formControlName="fullName" required>
       </div>
       <div class="form-group">
-        <label for="email">Email:</label>
+        <label for="email">Ваш E-mail:</label>
         <input type="email" id="email" name="email" formControlName="email" required>
       </div>
       <div class="form-group">
-        <label for="phone">Phone:</label>
+        <label for="phone">Ваш номер телефона:</label>
         <input type="tel" id="phone" name="phone" formControlName="phone">
       </div>
       <div class="form-group">
-        <label for="address">Address:</label>
+        <label for="address">Адрес для отгрузки:</label>
         <textarea id="address" name="address" formControlName="address"></textarea>
       </div>
       <div class="form-group">
-        <input type="submit" value="Complete the order">
+        <input type="submit" value="Отправить заказ">
       </div>
     </form>
   </div>
