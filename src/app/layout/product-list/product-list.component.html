@@ -4,7 +4,11 @@
         <img src="/assets/images_local/{{item.imageUrl}}" alt="Item 1">
         <h3>{{item.name}}</h3>
         <p class="price">${{item.price}}.00</p>
-        <button>Add to Cart</button>
+        <button (click)="addToCart(item)">Add to Cart</button>
       </div>
     </div>
   </div>
+
+<footer>
+    <p>&copy; 2024 <a href="https://github.com/ritsudo">ritsudo</a>; ChatGPT 4; Stable Diffusion UI 1.6.0</p>
+</footer>
