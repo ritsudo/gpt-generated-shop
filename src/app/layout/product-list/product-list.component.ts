@@ -24,9 +24,9 @@ export class ProductListComponent implements OnInit {
   addToCart(item: Item) {
     const result = this.cartService.addToCart(item);
     if (result == 1) {
-      window.alert('Your item ' + item.name + ' has been added to cart! Open the cart to change item count');
+//      window.alert('Your item ' + item.name + ' has been added to cart! Open the cart to change item count');
     } else if (result == -1) {
-      window.alert('Error: item' + item.name + ' is already exists');
+      window.alert('Error: item' + item.name + ' is already exists in your cart. Open the cart to change item count and make order');
     } else {
       window.alert('Error adding item');
     }

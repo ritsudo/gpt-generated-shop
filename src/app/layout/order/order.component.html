@@ -5,7 +5,7 @@
       <tr>
           <th>#</th>
           <th>Name</th>
-          <th>Price</th>
+          <th>1 pcs price</th>
           <th>Count</th>
           <th>Total Price</th>
       </tr>
@@ -23,25 +23,27 @@
   </tbody>
 </table>
   <!-- order table -->
-<p #totalPriceElement>Total items: {{items.length}}. <b>Total bill: {{totalBill}}$</b></p>
+<p *ngIf="totalBill>0" #totalPriceElement>Total items: {{items.length}}. <b>Total bill: {{totalBill}}$</b></p>
+<p *ngIf="totalBill==0">Your shopping cart is empty. Add something from items section.</p>
+
 <div class="container">
     <h2>Customer Information</h2>
-    <form id="customerForm">
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" id="customerForm">
       <div class="form-group">
         <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName" name="fullName" required>
+        <input type="text" id="fullName" name="fullName" formControlName="fullName" required>
       </div>
       <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" formControlName="email" required>
       </div>
       <div class="form-group">
         <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone">
+        <input type="tel" id="phone" name="phone" formControlName="phone">
       </div>
       <div class="form-group">
         <label for="address">Address:</label>
-        <textarea id="address" name="address"></textarea>
+        <textarea id="address" name="address" formControlName="address"></textarea>
       </div>
       <div class="form-group">
         <input type="submit" value="Complete the order">

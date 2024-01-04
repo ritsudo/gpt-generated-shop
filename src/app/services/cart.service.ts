@@ -80,8 +80,7 @@ export class CartService {
   }
 
   clearCart() {
-    this.countItems = [];
-    return this.countItems;
+    this.countItems.splice(0, this.countItems.length);
   }
 
   getItemCount() {
